@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="triangle" class="org.nik.javaspring.Triangle" autowire="constructor" >
+		<!-- <property name="type" value="Equilateral" /> -->
+		<!-- <constructor-arg value="Equilateral"></constructor-arg> -->
+		<!-- <constructor-arg type="java.lang.String" value="20"></constructor-arg> -->
+		<!-- <constructor-arg index="0" value="Eq"></constructor-arg> <constructor-arg 
+			index="1" value="20"></constructor-arg> -->
+		<!-- <property name="PointA" ref="zeroPoint"></property> <property name="PointB" 
+			ref="point1"></property> <property name="PointC" ref="point3"></property> -->
+<!-- 		<property name="points">
+			<list>
+				<ref bean="zeroPoint"></ref>
+				<ref bean="point2"></ref>
+				<ref bean="point3"></ref>
+			</list>
+		</property> -->
+		
+	</bean>
+	<bean id="pointA" class="org.nik.javaspring.Point">
+		<property name="x" value="0"></property>
+		<property name="y" value="0"></property>
+	</bean>
+	<bean id="pointB" class="org.nik.javaspring.Point">
+		<property name="x" value="-20"></property>
+		<property name="y" value="0"></property>
+	</bean>
+	<bean id="pointC" class="org.nik.javaspring.Point">
+		<property name="x" value="0"></property>
+		<property name="y" value="20"></property>
+	</bean>
+
+
+</beans>
